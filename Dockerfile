@@ -5,7 +5,7 @@ RUN pacman -S --noprogressbar --noconfirm unzip && \
     cd /var/abs/local && \
     git clone https://aur.archlinux.org/libpng12.git && \
     git clone https://aur.archlinux.org/ncurses5-compat-libs.git && \
-    git clone https://aur.archlinux.org/intel-opencl-sdk.git && \
+    git clone https://github.com/cviebig/arch-aur-intel-opencl-sdk.git intel-opencl-sdk && \
     git clone https://aur.archlinux.org/intel-opencl-runtime.git && \
     useradd -ms /bin/bash build || true && \
     chown -R build:build /var/abs/local && \
